@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http.-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>String</title>
+	  </head>
+	  <body>
+	  		<button onclick="myFunction()">Try it</button>
+            <p id="para">Hi</p>
+	  
+		<script> 
+		 
+		        <!-- String -->
+		
+		<!-- Type length -->
+		
+		console.log(name.length);
+		
+		 <!-- Type padStart -->
+		 
+		var name = "Lenin";
+		var result = name.padStart(7,"Hi");
+		console.log( result);
+		
+		 <!-- Type padEnd -->
+		
+		var resultone = name.padEnd(7,"Hi");
+		console.log(resultone );
+		
+		
+		   <!-- TypeSlice-->
+	
+		var slicename = "Lenin  hello hi";
+		
+		console.log(slicename.slice(0, 5));
+		console.log(slicename.slice(6));
+		console.log(slicename.slice(-15,-9));
+		console.log(slicename.slice(0));
+		
+		<!-- TypeSubstring-->
+		
+		<!-- substr() is similar to slice(). -->
+		
+		<!-- The difference is that start and end values less than 0 are treated as 0 in substring(). -->
+		
+		
+		
+		<!-- Type Replace-->
+	
+			function myFunction() {
+			  let repla = document.getElementById("para").innerHTML;
+			  document.getElementById("para").innerHTML =repla .replace("Hi","Lenin");
+			}
+
+			<!-- TypetoUpperCase();-->
+			<!-- TypetoLowerCase();-->
+			
+		
+		
+		<!-- Type trim--> 
+		
+		var text1 = "  Lenin  ";
+		
+		var text2 = text1.trim();
+		
+		console.log(text1.length);    //9
+		console.log(text2.length);    //5
+		
+		
+		<!-- Type start -->  trim starting empty space
+		<!-- Type End -->    trim ending empty space
+		
+		
+                   <!-- Type CharAt -->
+				   
+				   var Name = "Lenin";
+				   
+				   var Answer = Name.charAt(0);
+				    	console.log(Answer);
+						
+						<!-- Type CodeAt -->
+						
+					var Codeanswer= Name.charCodeAt(0);
+					console.log(Codeanswer);
+				
+		         <!-- Type Split -->
+		
+		         var letter ="A,B,C,D,E";
+				 
+						var letter = "a,b,c,d,e,f";
+						const myArray = letter.split(",");
+								
+		            console.log(letter.split(","));
+		              
+					  var myarry = myArray[0];
+		      
+		             console.log(myarry);
+		
+		            for(i=0; i<myArray.length; i++){
+					 var array = "";
+					 array += myArray[i];
+					 
+					console.log(array);
+					}
+		             
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		</script>
+	  </body>
