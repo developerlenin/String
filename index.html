@@ -9,9 +9,18 @@
 	  <body>
 	  		<button onclick="myFunction()">Try it</button>
             <p id="para">Hi</p>
+			<input type = "text" id="input">
+			<button onclick="Answerr ()">Ans</button>
+			<p id="paraone"></p>
 	  
 		<script> 
-		 
+		     function Answerr (){
+					var inpuT = document.getElementById("input").value;
+					 document.getElementById("paraone").innerHTML=inpuT;
+			  }
+		  
+		      
+		 console.log(numberToWords.toWordsOrdinal(1));
 		        <!-- String -->
 		
 		<!-- Type length -->
@@ -21,7 +30,7 @@
 		 <!-- Type padStart -->
 		 
 		var name = "Lenin";
-		var result = name.padStart(7,"Hi");
+		var result = name.padStart(8,"Hi");
 		console.log( result);
 		
 		 <!-- Type padEnd -->
@@ -77,42 +86,83 @@
 				   
 				   var Name = "Lenin";
 				   
-				   var Answer = Name.charAt(0);
+				   var Answer = Name.charAt(2);
 				    	console.log(Answer);
 						
 						<!-- Type CodeAt -->
 						
-					var Codeanswer= Name.charCodeAt(0);
+					var Codeanswer= Name.charCodeAt(2);
 					console.log(Codeanswer);
 				
 		         <!-- Type Split -->
 		
-		         var letter ="A,B,C,D,E";
+		         var letter ="ABCDE";
 				 
-						var letter = "a,b,c,d,e,f";
+						<!-- var letter = "a,b,c,d,e,f"; -->
 						const myArray = letter.split(",");
 								
-		            console.log(letter.split(","));
+		            console.log(myArray );
 		              
 					  var myarry = myArray[0];
-		      
+		               
 		             console.log(myarry);
 		
-		            for(i=0; i<myArray.length; i++){
+		        
+				for(i=0; i<myArray.length; i++){
 					 var array = "";
 					 array += myArray[i];
 					 
 					console.log(array);
 					}
+					
+					<!-- text valueof() -->
+					
+					var valuE = "Lenin";
+					
+					var value1= valuE.valueOf();
+					console.log(value1);
 		             
+		          <!-- padstart -->
+		  
+		         var start = "lenin";
+				 
+				 var padstart = start.padStart("7" ,"hi");
+				 
+				 console.log(padstart )
+				 
+		         var startt = "lenin";
+				 
+				 var padend= start.padEnd("7" ,"hi");
+				 
+				 console.log(padend )
 		
-		
-		
-		
-		
-		
-		
-		
-		
+		            <!-- JavaScript String match -->
+
+						let text = "hi hello "
+						let texT2=text.match("e");
+						console.log(texT2);
+
+                      
+
+                  <!-- JavaScript String repeat -->
+
+						var texT = "Hello";
+					var result = texT.repeat(2);
+					console.log(result);
+
+
+                       <!-- JavaScript String search -->
+
+
+							var seacrH = "Hi Hello "
+						 var  position = text.search("Hello");
+						  console.log(position);
+
+						<!-- The localeCompare()  -->
+						
+						var text1 = "cd";
+					   var text2 = "ab";
+					   var Result = text2.localeCompare(text1);
+                           console.log(Result);
 		</script>
 	  </body>
